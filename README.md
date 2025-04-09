@@ -1,2 +1,83 @@
 # Mini-Project---I-m-Something-of-a-Painter-Myself
-Mini project from kaggle dataset - GAN model
+**Mini project from kaggle dataset - GAN model**
+
+This is a mini project that uses a GAN model to generate images of paintings. The dataset used is the "I’m Something of a Painter Myself" dataset from Kaggle, which contains images of paintings and their corresponding labels.
+
+The project is implemented using TensorFlow and Keras, and the GAN model is trained on the dataset to generate new images of paintings. The generated images can be used for various purposes, such as art generation, style transfer, and more.
+The project is structured as follows:   
+
+```
+|-- data
+|   |-- monet_jpg
+|   |-- monet_tfrec 
+|   |-- photo_jpg
+|   |-- photo_tfrec
+|-- notebooks
+|   |-- GAN.ipynb
+|-- src
+|   |-- app.py
+|   |-- utils.py
+|-- models
+|   |-- gan.keras
+|-- requirements.txt
+|-- README.md
+```
+
+## Dataset
+The dataset used in this project is the "I’m Something of a Painter Myself" dataset from Kaggle. The dataset contains images of paintings and their corresponding labels. The dataset is divided into two parts: the Monet dataset and the Photo dataset. The Monet dataset contains images of paintings by Claude Monet, while the Photo dataset contains images of real-world photographs.    
+
+The dataset is available on Kaggle and can be downloaded from the following link: [I’m Something of a Painter Myself](https://www.kaggle.com/datasets/akshaybhalotia/im-something-of-a-painter-myself).
+
+The dataset is in the form of TFRecord files, which are a binary format used by TensorFlow to store data. The dataset can be loaded using the `tf.data` API in TensorFlow.
+The dataset is divided into two parts: the Monet dataset and the Photo dataset. The Monet dataset contains images of paintings by Claude Monet, while the Photo dataset contains images of real-world photographs. The dataset is available in both JPEG and TFRecord formats.
+The JPEG format is a standard image format, while the TFRecord format is a binary format used by TensorFlow to store data. The TFRecord format is more efficient for training machine learning models, as it allows for faster data loading and processing.
+
+The dataset can be loaded using the `tf.data` API in TensorFlow. The `tf.data` API provides a high-level interface for loading and processing data in TensorFlow. The API allows for efficient data loading and processing, which is essential for training machine learning models.
+
+# Requirements
+
+This project requires the following packages:
+
+- TensorFlow 2.0 or higher
+- Keras 2.0 or higher
+- NumPy
+- Matplotlib
+- OpenCV
+- scikit-learn
+- scikit-image
+- Pillow
+- tqdm
+- IPython
+- Flask
+
+# To create your virtual environment and install the required packages, run the following command:
+
+```bash
+make create_env
+``` 
+
+This will create a virtual environment named `venv` and install the required packages listed in the `requirements.txt` file.
+
+# Usage
+To run the project, follow these steps:
+1. Clone the repository:
+```bash
+git clone https://github.com/cesar1091/Mini-Project---I-m-Something-of-a-Painter-Myself.git
+cd Mini-Project---I-m-Something-of-a-Painter-Myself
+```
+2. Create a virtual environment and install the required packages:
+```bash
+make create_env
+``` 
+3. Activate the virtual environment:
+```bash
+# On Windows
+venv\Scripts\activate   
+# On macOS and Linux
+source venv/bin/activate
+```
+4. Run the Flask app:
+```bash 
+make app
+```
+
