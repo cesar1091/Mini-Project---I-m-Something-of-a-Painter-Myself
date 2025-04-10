@@ -14,7 +14,7 @@ create_env:
 
 app:
 	@echo "Running the application..."
-	.venv\Scripts\python app.py
+	.venv\Scripts\python && cd src && streamlit run app.py
 	@echo "Application stopped."
 
 deploy: create_env app

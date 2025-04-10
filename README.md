@@ -1,7 +1,7 @@
 # Mini-Project---I-m-Something-of-a-Painter-Myself
 **Mini project from kaggle dataset - GAN model**
 
-This is a mini project that uses a GAN model to generate images of paintings. The dataset used is the "I’m Something of a Painter Myself" dataset from Kaggle, which contains images of paintings and their corresponding labels.
+This is a mini project that uses a GAN model to generate images of paintings. The dataset used is the "I’m Something of a Painter Myself" dataset from Kaggle, which contains images of paintings.
 
 The project is implemented using TensorFlow and Keras, and the GAN model is trained on the dataset to generate new images of paintings. The generated images can be used for various purposes, such as art generation, style transfer, and more.
 The project is structured as follows:   

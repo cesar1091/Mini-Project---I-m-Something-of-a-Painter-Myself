@@ -1,0 +1,5 @@
+streamlit==1.21.0
+pillow==10.1.0
+numpy==1.23.5
+tensorflow==2.10.1
+protobuf==3.19.6
