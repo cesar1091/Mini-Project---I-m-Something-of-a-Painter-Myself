@@ -176,3 +176,9 @@ cython_debug/
 # Datasets
 *.csv
 /data
+*.json
+*.parquet
+*.tsv
+*.zip
+*.tar.gz
+*.tar.bz2   
